@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:layout_above="@+id/bottomNavigation"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-2dp"
+        app:srcCompat="@drawable/topofbottomnav" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/bottomNavigation"
+        app:itemIconTint="@drawable/bgforbottomnav"
+        app:itemTextColor="@drawable/bgforbottomnav"
+        app:labelVisibilityMode="selected"
+        android:padding="3dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        android:background="@drawable/bottomnavbg"
+        android:fontFamily="@font/montserrat"
+        android:textSize="8dp" />
+
+</RelativeLayout>

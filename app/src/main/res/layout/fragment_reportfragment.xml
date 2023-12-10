@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reportfragment"
+    android:background="@drawable/homebg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1010dp"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/homebg"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/male_user"/>
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shopping_cart"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="119dp"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="82dp"
+        android:layout_toStartOf="@+id/cart"
+        android:layout_toEndOf="@+id/profile"
+        android:background="@drawable/logo"/>
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Daily Report"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Date For Today"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/Datetoday"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgtext"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/textView2"
+        android:hint="Date For Today (yyyy:mm:dd)"
+        android:inputType="none"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:maxLines="1"
+        android:layout_marginStart="16dp"
+        android:padding="12dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Datetoday"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Report"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/Report"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgtext"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/textView3"
+        android:hint="Report"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#9A9A9D"
+        android:textSize="14dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Report"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Message"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/Message"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgtext"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/textView4"
+        android:hint="Message"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#9A9A9D"
+        android:textSize="14dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Message"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Chocolate Stick ( 10 PHP )"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ChocolateStick"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgtext"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/textView5"
+        android:hint="Chocolate Stick"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#9A9A9D"
+        android:textSize="14dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChocolateStick"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Milk Stick ( 10 PHP )"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/MilkStick"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgtext"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/textView6"
+        android:hint="Milk Stick"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#9A9A9D"
+        android:textSize="14dp"
+        android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MilkStick"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Pineapple Stick ( 10 PHP )"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/PineappleStick"
+                android:layout_width="302dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bgtext"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/textView7"
+                android:hint="Pineapple Stick"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#9A9A9D"
+                android:textSize="14dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PineappleStick"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Sweetcorn Stick ( 10 PHP )"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/SweetcornStick"
+                android:layout_width="302dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bgtext"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/textView8"
+                android:hint="Sweetcorn Stick"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#9A9A9D"
+                android:textSize="14dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SweetcornStick"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Watermelon Stick ( 10 PHP )"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/WatermelonStick"
+                android:layout_width="302dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bgtext"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/textView9"
+                android:hint="Watermelon Stick"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#9A9A9D"
+                android:textSize="14dp"
+                android:layout_marginStart="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Send"
+                android:layout_width="300dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/WatermelonStick"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="25dp"
+                android:backgroundTint="#1C360D"
+                android:text="SEND NOW"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                android:fontFamily="@font/montserrat_bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

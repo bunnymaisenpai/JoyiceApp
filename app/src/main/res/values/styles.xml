@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Other style attributes -->
+
+        <!-- Add the following line to customize the BottomNavigationView background -->
+        <item name="bottomNavigationStyle">@style/Widget.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="background">?android:attr/windowBackground</item>
+    </style>
+</resources>

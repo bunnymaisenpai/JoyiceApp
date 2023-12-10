@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Click Get Started"
+        android:textSize="26sp"
+        android:textColor="#1C360D"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="to explore the joy"
+        android:textColor="#ffffff"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="of ice cream."
+        android:textColor="#ffffff"
+        android:textSize="26sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_lessee"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#1C360D"
+        android:text="GET STARTED"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:onClick="goToLogin"/>
+
+
+</RelativeLayout>
